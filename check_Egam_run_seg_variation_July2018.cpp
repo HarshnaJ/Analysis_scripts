@@ -5,36 +5,9 @@
 {
 
 
-  //Read in runlist
-  vector<int> runlist;
-  ifstream input;
-  input.open("Mg24_runs_Col.dat");
-    while(!input.eof())
-	{
-	 int dummy = 0;
-	 input >> dummy;
-	 runlist.push_back(dummy);	
-	 //if(dummy!=0)  cout << "LIST:run number " << dummy << endl;
-	 }
-
-  Int_t nrofruns=(int)runlist.size()-1; 
-
-
-  //Defining fit 
-  Double_t xmin=1320,xmax=1420;
-  TF1 *fit = new TF1("fit","gaus(0) + pol1(3)",xmin,xmax);
-  //TF1 *fit = new TF1("fit","gaus(0)",xmin,xmax);
-  Float_t height,position,sigm,intercept,slope;
-  height = 30;
-  position = 1366;
-  sigm = 2;
-  intercept = 0;
-  slope = 0;
-  fit->SetParameters(height,position,sigm,intercept,slope);
-  //fit->SetParameters(height,position,sigm); 
-  Double_t par[5];
-  gStyle->SetOptFit(10001);
-
+ vfgvhdhvgfhbfhbahdbvfhdfvgdfhabvhb JHv hmfbd 
+bdfhvbadjfhbvjhdfbvdfhbvjhen dhb vhdfh
+vhdgfyugvkdfbhvbdfjk
 
 
   //creating output file 
